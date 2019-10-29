@@ -20,7 +20,7 @@ A small template for any TSQPF plugins.
 
 This is already included in the repository be default. You can find it under ```/bin/tsqpf-[version]-[title]-api.jar```.
 
-### Developing a Plugin
+### ☕ Developing a Plugin
 
 Here's a step by step guide on how to get started developing your own plugin for the TSQPF.
 
