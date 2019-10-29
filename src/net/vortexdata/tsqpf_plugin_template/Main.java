@@ -2,6 +2,7 @@ package net.vortexdata.tsqpf_plugin_template;
 
 import com.github.theholywaffle.teamspeak3.api.event.ClientJoinEvent;
 import net.vortexdata.tsqpf.plugins.TeamspeakPlugin;
+import net.vortexdata.tsqpf_plugin_template.commands.chat.CTest;
 
 public class Main extends TeamspeakPlugin {
 
@@ -16,6 +17,12 @@ public class Main extends TeamspeakPlugin {
 
         // Sends a global server message
         getAPI().sendServerMessage(getConfig().readValue("myJoinMessage"));
+
+        // Register a chat command
+        registerChatCommand(new CTest(getAPI()), "!test");
+
+
+        getLogger().printInfo("Template plugin loaded");
 
     }
 
