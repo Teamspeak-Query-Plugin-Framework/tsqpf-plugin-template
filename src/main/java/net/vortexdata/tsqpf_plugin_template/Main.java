@@ -39,7 +39,7 @@ public class Main extends TeamspeakPlugin {
      */
     @Override
     public void onClientJoin(ClientJoinEvent clientJoinEvent) {
-        getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), "Hello!");
+        getAPI().sendPrivateMessage(clientJoinEvent.getClientId(), "Hello there!");
     }
 
 }
